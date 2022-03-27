@@ -11,6 +11,7 @@
   inputs.src-binio-master.ref   = "refs/heads/master";
   inputs.src-binio-master.owner = "Riderfighter";
   inputs.src-binio-master.repo  = "binio";
+  inputs.src-binio-master.dir   = "";
   inputs.src-binio-master.type  = "github";
   
   inputs."struct".owner = "nim-nix-pkgs";
