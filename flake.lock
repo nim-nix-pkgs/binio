@@ -1,5 +1,33 @@
 {
   "nodes": {
+    "binio-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-binio-master": "src-binio-master",
+        "struct": "struct"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556683,
+        "narHash": "sha256-bkDX54E72UiSSCDcqsYGNmXH7t5Egeztv4Om8r4p/vc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "binio",
+        "rev": "99b62fcc3fe2afab495811425d05ea69474d3954",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "binio",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,10 +62,9 @@
     },
     "root": {
       "inputs": {
+        "binio-master": "binio-master",
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs",
-        "src-binio-master": "src-binio-master",
-        "struct": "struct"
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-binio-master": {
@@ -77,20 +104,22 @@
     "struct": {
       "inputs": {
         "flakeNimbleLib": [
+          "binio-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "binio-master",
           "nixpkgs"
         ],
         "src-struct-v0_2_3": "src-struct-v0_2_3"
       },
       "locked": {
         "dir": "v0_2_3",
-        "lastModified": 1651918486,
-        "narHash": "sha256-RcgMuAkheLF/VjHlLbxSX7w/tnIwDKGHSm6XrY7S7qs=",
+        "lastModified": 1651556075,
+        "narHash": "sha256-KOif7F9qcjiCbH1Qt+HB8oKU2V+ab/zKNu0gHVzgMW0=",
         "owner": "nim-nix-pkgs",
         "repo": "struct",
-        "rev": "6933f0c1e4f2a26166284ced5e3048df141a9860",
+        "rev": "b6ebb3bfd65bda8de12b232ded8480b34fafef8e",
         "type": "github"
       },
       "original": {
